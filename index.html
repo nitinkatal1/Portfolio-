@@ -222,22 +222,6 @@
                   <div class="text">Project <br />Completed</div>
                 </div>
               </div>
-              <div class="info">
-                <div class="info-contain">
-                  <div class="number">
-                    <span class="odometer3">1</span>
-                  </div>
-                  <div class="text">Happy <br />Clients</div>
-                </div>
-              </div>
-              <div class="info">
-                <div class="info-contain">
-                  <div class="number">
-                    <span class="odometer4">0.5</span>
-                  </div>
-                  <div class="text">Years of <br />Experience</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -613,8 +597,6 @@
       document.addEventListener("scroll", () => {
         const odometer1 = document.querySelector(".odometer1");
         const odometer2 = document.querySelector(".odometer2");
-        const odometer3 = document.querySelector(".odometer3");
-        const odometer4 = document.querySelector(".odometer4");
 
         var odometer = new Odometer({
           el: odometer1,
@@ -622,17 +604,10 @@
         var odometer = new Odometer({
           el: odometer2,
         });
-        var odometer = new Odometer({
-          el: odometer3,
-        });
-        var odometer = new Odometer({
-          el: odometer4,
-        });
+
         if (window.scrollY > 200) {
           odometer1.innerHTML = 0.5;
           odometer2.innerHTML = 5;
-          odometer3.innerHTML = 1;
-          odometer4.innerHTML = 0.5;
         }
       });
     </script>

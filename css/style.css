@@ -878,6 +878,7 @@ header.active .menutoggle::after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .hero .facts .info {
